@@ -1,0 +1,42 @@
+# LLM 结构化提取服务配置文件
+# 此文件包含所有可配置的参数，避免硬编码
+
+# LLM 配置
+llm:
+  # 默认使用的 LLM 提供商
+  provider: dashscope
+  
+  # 各提供商的模型配置
+  models:
+    dashscope:
+      # 模型名称
+      name: "qwen3-max-preview"
+      # 生成参数
+      temperature: 0.1
+      max_tokens: 4096
+      timeout: 60
+    
+# 提示词配置
+prompts:
+  # 系统提示词
+  system_instruction: |
+    你是一个专业信息提取引擎。请严格按以下规则输出：
+    1. 仅输出符合业务架构的 Markdown 内容
+    2. 使用 #/##/### 标题层级和 ● 列表
+    3. 无信息字段标题下留空（不写'无'/'未提及'）
+    4. 直接复制原文片段，禁止改写/总结/补充
+    5. 禁止包含 ```markdown、```、解释、注释等任何额外内容
+  
+  # Few-shot 示例文件路径（相对于项目根目录）
+  few_shot_example_path: "llm_structured_extract/templates/examples/company_extract_example.txt"
+
+# 服务配置
+service:
+  # 默认使用的 schema
+  default_schema: ""
+  
+  # Celery 任务队列名称
+  task_queue: "extract"
+  
+  # 默认超时时间（秒）
+  default_timeout: 30

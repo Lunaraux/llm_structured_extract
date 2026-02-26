@@ -1,0 +1,37 @@
+{
+  "overall_industry": {
+    "market_size_and_trend": null,
+    "growth_drivers_past_and_future": null,
+    "policy_impact_on_supply_demand": null
+  },
+  "sub_industry": {
+    "segmentation_basis": null,
+    "submarket_size_and_trend": null,
+    "submarket_drivers_past_and_future": null,
+    "policy_impact_on_submarket": null
+  },
+  "industry_chain": {
+    "industry_chain_structure": "● 报告期内，公司下辖饲料、生猪养殖、兽药三大业务板块",
+    "cost_profit_distribution_by_segment": null,
+    "future_evolution_and_logic": null
+  },
+  "industry_competition": {
+    "market_competition_dynamics": {
+      "enterprise_count_and_concentration": null,
+      "product_homogenization_and_margin": "● 2024年，公司生猪养殖业务毛利率 22.83%，较上年同期-25.43%增长48.27个百分点，整体毛利润13.15 亿元，较上年同期-10.00亿元大幅上升，实现扭亏为盈。"
+    },
+    "competitor_analysis_detail": {
+      "qualitative": {
+        "competitor_4p_strategy_and_basis": "● （1）强化对营销前台的管控，重新构建前后台作战体系及分权和行权，强化前台主战、后台主建的职责分工，建立更高效的流程化经营组织；（2）在产品设计上以猪料和禽料为主，同时根据经营规划布局水产料和反刍料;（3）针对不同客户群体采用不同的业务模式，分销主要围绕优质经销商开发，在全国各乡镇布局经销商网点，家庭大猪场采用直销经营模式，养殖公司和规模化大猪场采取大客户代工经营模式。\n● 公司兽药产品主要通过一级代理商分销为主，逐步加大直销大客户开发力度。同时组建了一支实力强劲的技术团队，充分复用双胞胎集团在养猪领域深厚的专业能力，精心打造了信息分享与咨询、疾病检测与诊断、动保化验与药敏、技术培训与交流四大服务体系，为广大养殖客户排忧解难，让养殖更轻松更高效。"
+      },
+      "quantitative": {
+        "quantitative_metrics": "● 2024 年公司实现营业总收入88.70 亿元，同比上升 26.86%，归属于上市公司股东的净利润2.16 亿元，扣除非经常性损益后的归属于上市公司股东的净利润亏损3.33亿元，较上年同期亏损 48.83亿元大幅减亏93.19%\n● 2024年，公司销售饲料（含调拨至养殖板块）合计124万吨，同比增长94%。\n● 报告期内，公司生猪出栏414.66万头，其中商品猪出栏199.46万头，仔猪215.20万头。截至报告期末，公司能繁母猪存栏约27.5万头。\n● 2024年兽药销售收入0.74亿元，同比增长14.34%。"
+      }
+    }
+  },
+  "customer_and_consumer": {
+    "satisfaction_and_core_need_fulfillment": null,
+    "main_complaints_and_dissatisfactions": null,
+    "future_needs_and_expectations": null
+  }
+}

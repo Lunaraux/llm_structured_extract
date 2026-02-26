@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm_structured_extract"
+version = "0.1.0"
+description = "Structured extraction with LLM: library + optional service layer"
+authors = [{ name = "Team" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv>=1.0.0",
+  "pydantic>=2.6.0",
+  "Jinja2>=3.1.3",
+  "openai>=1.12.0",
+  "dashscope>=1.15.0",
+  "requests>=2.32.0",
+  "tenacity>=8.2.3",
+]
+
+[project.scripts]
+llm-extract = "llm_structured_extract.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest>=8.2.0"]
+service = [
+  "celery>=5.3.6",
+  "redis>=5.0.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llm_structured_extract*", "llm_structured_extract_service*"]

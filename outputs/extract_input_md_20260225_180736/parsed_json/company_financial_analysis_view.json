@@ -1,0 +1,126 @@
+{
+  "balance_sheet_analysis": {
+    "quick_analysis": {
+      "asset_quality": {
+        "asset_structure": {
+          "exit_barrier": "● 截至报告期末，公司整体资产利用率仍偏低，公司闲置资产对公司整体经营效益仍存在一定程度影响。",
+          "operational_risk": "● 截至报告期末，公司整体资产利用率仍偏低，公司闲置资产对公司整体经营效益仍存在一定程度影响。"
+        },
+        "cash_content": {
+          "financial_flexibility": "● 2024年，公司产能加速恢复，有息负债基本清偿完毕。2024年财务费用1.59 亿元，较上年同期大幅下降79.85%，期间费用14.08 亿元，较上年同期下降38.24%。",
+          "potential_loss": "● 2024年，公司计提的各项减值损失约1.72亿元，较上年同期计提20.95 亿大幅下降91.79%。"
+        }
+      }
+    },
+    "detailed_analysis": {
+      "asset_common_size_analysis": {
+        "anomalies": "● 截至报告期末，公司整体资产利用率仍偏低，公司闲置资产对公司整体经营效益仍存在一定程度影响。",
+        "debt_to_asset_ratio": "● 2024年末归属于上市公司股东的净资产9,997,994,841.33元，总资产17,494,129,821.88元。",
+        "net_assets": "● 2024年末归属于上市公司股东的净资产9,997,994,841.33元。",
+        "annual_interest_cost": "● 2024年财务费用1.59 亿元。",
+        "accounts_receivable": null,
+        "prepaid_accounts": null,
+        "accounts_payable": null,
+        "cash_on_hand": "● 经营活动产生的现金流量净额174,436,414.86元。",
+        "inventory": null,
+        "goodwill": null,
+        "fixed_assets": "● 截至报告期末，公司整体资产利用率仍偏低，公司闲置资产对公司整体经营效益仍存在一定程度影响。"
+      },
+      "asset_trend_analysis": {
+        "historical_comparison": "● 2024年末总资产17,494,129,821.88元，较2023年末增长8.61%；归属于上市公司股东的净资产9,997,994,841.33元，较2023年末增长14.23%。"
+      },
+      "asset_comparative_analysis": {
+        "industry_benchmark": null
+      },
+      "asset_ratio_analysis": {
+        "solvency": {
+          "short_term_solvency": null,
+          "long_term_solvency": null
+        },
+        "operational_capability": {
+          "ar_turnover": null,
+          "inventory_turnover": null,
+          "fa_turnover": null,
+          "ta_turnover": null
+        },
+        "equity_multiplier": null
+      }
+    }
+  },
+  "income_statement_analysis": {
+    "quick_analysis_income": {
+      "profit_quality": {
+        "revenue_quality": {
+          "revenue_growth": "● 2024 年公司实现营业收入88.70 亿元，较上年同期 69.92 亿元增长26.86%。",
+          "revenue_volatility": "● 第一季度营业收入1,441,845,444.21元，第二季度1,781,020,451.20元，第三季度2,614,541,255.59元，第四季度3,032,309,172.34元。"
+        },
+        "net_profit_quality": {
+          "profit_growth": "● 归属于上市公司股东的净利润216,402,083.36元，较上年同期8,528,709,536.15元下降97.46%；扣除非经常性损益后的归属于上市公司股东的净利润亏损3.33亿元，较上年同期亏损 48.83亿元大幅减亏93.19%。",
+          "profit_volatility": "● 第一季度归属于上市公司股东的净利润-48,804,484.37元，第二季度-78,687,713.36元，第三季度428,163,017.75元，第四季度-84,268,736.66元。"
+        },
+        "gross_margin_quality": {
+          "rd_investment_space": null,
+          "marketing_investment_space": null
+        }
+      }
+    },
+    "detailed_analysis_income": {
+      "income_common_size_analysis": {
+        "income_anomalies": null,
+        "sales_expenses": null,
+        "management_costs": null,
+        "rd_expenses": null,
+        "financial_expenses": "● 2024年财务费用1.59 亿元，较上年同期大幅下降79.85%。",
+        "annual_revenue": {
+          "revenue_growth_3y": "● 2024年营业收入8,869,716,323.34元，较2023年6,991,677,730.61元增长26.86%；2023年较2022年14,415,038,850.39元下降。",
+          "product_revenue_mix": "● 报告期内，公司主要从事饲料生产与销售、生猪养殖与销售及兽药的生产与销售。",
+          "revenue_forecast": null
+        },
+        "gross_margin": "● 2024年，公司生猪养殖业务毛利率 22.83%，较上年同期-25.43%增长48.27个百分点。",
+        "top_cost_item": null,
+        "net_profit": {
+          "profit_growth_3y": "● 2024年归属于上市公司股东的净利润216,402,083.36元，较2023年8,528,709,536.15元下降97.46%；2023年较2022年-13,385,634,289.45元上升。",
+          "profit_forecast": null
+        },
+        "government_subsidies": null,
+        "tax_rate": null
+      },
+      "income_trend_analysis": {
+        "income_historical_comparison": "● 2024年归属于上市公司股东的净利润216,402,083.36元，较2023年8,528,709,536.15元下降97.46%；2023年较2022年-13,385,634,289.45元上升。"
+      },
+      "income_comparative_analysis": {
+        "income_industry_benchmark": null
+      },
+      "income_ratio_analysis": {
+        "profitability": null,
+        "main_gross_margin": "● 2024年，公司生猪养殖业务毛利率 22.83%，较上年同期-25.43%增长48.27个百分点。",
+        "net_margin": null,
+        "roa": "● 加权平均净资产收益率2.00%。",
+        "roe": "● 加权平均净资产收益率2.00%。",
+        "profit_to_cash_ratio": null
+      },
+      "growth_capability": {
+        "revenue_growth_rate": "● 2024 年公司实现营业收入88.70 亿元，较上年同期 69.92 亿元增长26.86%。",
+        "asset_growth_rate": "● 2024年末总资产17,494,129,821.88元，较2023年末增长8.61%。"
+      }
+    }
+  },
+  "cash_flow_statement_analysis": {
+    "quick_analysis_cash": {
+      "cash_flow_status": {
+        "operating_cash_flow_status": {
+          "cash_generation_capability": "● 经营活动产生的现金流量净额174,436,414.86元。",
+          "ar_collection_quality": null
+        },
+        "free_cash_flow_status": {
+          "debt_dividend_servicing": null
+        }
+      }
+    },
+    "detailed_analysis_cash": {
+      "operating_cash_flow_net": "● 经营活动产生的现金流量净额174,436,414.86元。",
+      "investing_cash_flow_net": null,
+      "financing_cash_flow_net": null
+    }
+  }
+}
