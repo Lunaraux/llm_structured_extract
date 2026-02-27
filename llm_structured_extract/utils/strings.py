@@ -7,14 +7,19 @@ def normalize_title(text: str) -> str:
     正规化标题，用于增强匹配的鲁棒性。
     1. 移除首尾空格
     2. 统一全角/半角字符
-    3. 移除末尾的标点符号（如 ：: ? ？ . 。）
-    4. 统一转为小写
+    3. 移除开头的序号（如 1. 、(1)、一、）
+    4. 移除末尾的标点符号（如 ：: ? ？ . 。）
+    5. 统一转为小写
     """
     if not text:
         return ""
     
     # 统一全角转半角
     text = unicodedata.normalize('NFKC', text)
+    
+    # 移除开头的序号
+    seq_pattern = r"^[一二三四五六七八九十\d]{1,2}[.、）\s)]*"
+    text = re.sub(seq_pattern, "", text.strip())
     
     # 移除末尾标点
     text = re.sub(r'[:：?？.。!！\s]+$', '', text)

@@ -17,7 +17,7 @@ class CurrentRoundFundingPlanView(BaseModel):
 @register_schema
 class CompanyFundingPlanView(BaseModel):
     __business_architecture__: str = """
-# 八、公司融资方案如何？ [id:company_funding_plan]
+# 公司融资方案如何？ [id:company_funding_plan]
 
 ## 本轮融资方案如何？ [id:current_round_funding_plan]
 
@@ -25,7 +25,7 @@ class CompanyFundingPlanView(BaseModel):
 ### 本次除了融资以外是否有其他需求？ [id:other_needs_besides_funding]
 """.strip()
 
-    """# 八、公司融资方案如何？ [id:company_funding_plan]"""
+    """# 公司融资方案如何？ [id:company_funding_plan]"""
     current_round_funding_plan: CurrentRoundFundingPlanView = Field(
         default_factory=CurrentRoundFundingPlanView,
         json_schema_extra={"markdown_title": "本轮融资方案如何？"}

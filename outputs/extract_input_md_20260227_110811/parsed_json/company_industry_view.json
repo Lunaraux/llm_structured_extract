@@ -1,0 +1,35 @@
+{
+  "overall_industry": {
+    "market_size_and_trend": "null",
+    "growth_drivers_past_and_future": "null",
+    "policy_impact_on_supply_demand": "null"
+  },
+  "sub_industry": {
+    "segmentation_basis": "● 报告期内，公司主要从事饲料生产与销售、生猪养殖与销售及兽药的生产与销售。",
+    "submarket_size_and_trend": "null",
+    "submarket_drivers_past_and_future": "null",
+    "policy_impact_on_submarket": "null"
+  },
+  "industry_chain": {
+    "industry_chain_structure": "● 报告期内，公司下辖饲料、生猪养殖、兽药三大业务板块。",
+    "cost_profit_distribution_by_segment": "null",
+    "future_evolution_and_logic": "null"
+  },
+  "industry_competition": {
+    "market_competition_dynamics": "null",
+    "enterprise_count_and_concentration": "null",
+    "product_homogenization_and_margin": "● 2024年，公司生猪养殖业务毛利率 22.83%，较上年同期-25.43%增长48.27个百分点，整体毛利润13.15 亿元，较上年同期-10.00亿元大幅上升，实现扭亏为盈。",
+    "competitor_analysis_detail": "● 报告期内，公司复用控股股东双胞胎集团的管理与平台，通过强化管理、提升技术、改革考核等措施，生产效益稳中向好。  \n● 报告期内，公司借助双胞胎集团强大的序列运营能力，积极稳健地开展饲料工厂复工复产工作。  \n● 报告期内，在双胞胎集团的帮扶下，公司兽药业务全面对标、全面复用、全面赋能；整合双方的生产、技术、市场资源，成本降低，效率提升，对外销量明显增长。",
+    "qualitative": {
+      "competitor_4p_strategy_and_basis": "● 饲料业务：在产品设计上以猪料和禽料为主，同时根据经营规划布局水产料和反刍料；针对不同客户群体采用不同的业务模式，分销主要围绕优质经销商开发，在全国各乡镇布局经销商网点，家庭大猪场采用直销经营模式，养殖公司和规模化大猪场采取大客户代工经营模式。  \n● 生猪养殖业务：主要经营模式有自繁自养模式和\"公司+农户\"合作养殖模式；“公司+农户\"模式是一种轻资产扩张模式，即在公司的繁殖场周围一定区域内，发展若干合作养殖农户，公司为农户提供仔猪、饲料、兽药、全程养殖技术指导和管控，公司负责生猪销售，并承担肥猪销售的市场风险，合作农户负责育肥阶段猪场的建设投资、生猪育肥饲养工作，不承担生猪养殖的市场风险。  \n● 兽药业务：公司兽药产品主要通过一级代理商分销为主，逐步加大直销大客户开发力度；组建了一支实力强劲的技术团队，充分复用双胞胎集团在养猪领域深厚的专业能力，精心打造了信息分享与咨询、疾病检测与诊断、动保化验与药敏、技术培训与交流四大服务体系。"
+    },
+    "quantitative": {
+      "quantitative_metrics": "null"
+    }
+  },
+  "customer_and_consumer": {
+    "satisfaction_and_core_need_fulfillment": "● 报告期内，公司饲料业务坚持以客户为中心，管理沉一线，端到端拉通，销量大幅增长；生猪养殖业务逐步恢复，养户市场信任度逐步修复，生产成绩显著提高，生产效益稳中有进；兽药业务充分发挥与控股股东的协同、对标与赋能效应，销售收入同比增加。",
+    "main_complaints_and_dissatisfactions": "null",
+    "future_needs_and_expectations": "null"
+  }
+}

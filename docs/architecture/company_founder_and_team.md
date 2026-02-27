@@ -16,13 +16,12 @@
 
 ### 公司团队关系及协作是否融洽？ [id:team_collaboration]
 
-#### 团队成员是否在创业之前有过协作经历？ [id:prior_collaboration]
-#### 目前团队成员之间关系是否融洽？沟通是否顺畅？ [id:current_relationship]
+#### 团队成员是否在创业之前有过协作经历？目前团队成员之间关系是否融洽？沟通是否顺畅？[id:prior_collaboration_current_relationship]
 
 ### 创始人及核心团队成员技术水平和产品打造能力如何？ [id:technical_product_capability]
 
 #### 创始人及核心团队成员具备哪些核心技术能力？ [id:core_technical_skills]
-#### 是否有过从0到1构建产品的经历？ [id:zero_to_one_experience]
+#### 创始人及核心团队成员是否有过从0到1构建产品的经历吗？ [id:zero_to_one_experience]
 
 ### 创始人及核心团队成员商业能力如何？ [id:business_capability]
 

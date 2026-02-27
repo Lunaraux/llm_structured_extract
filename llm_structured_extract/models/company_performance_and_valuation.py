@@ -37,7 +37,7 @@ class HistoricalFundingView(BaseModel):
 @register_schema
 class CompanyPerformanceAndValuationView(BaseModel):
     __business_architecture__: str = """
-# 七、公司业绩预测和估值如何？ [id:company_performance_and_valuation]
+# 公司业绩预测和估值如何？ [id:company_performance_and_valuation]
 
 ## 公司未来业绩如何？ [id:future_performance]
 
@@ -55,7 +55,7 @@ class CompanyPerformanceAndValuationView(BaseModel):
 ### 之前的融资是否有对赌或其他回购条款？对赌和回购的时间节点是什么？ [id:redemption_clauses_and_deadlines]
 """.strip()
 
-    """# 七、公司业绩预测和估值如何？ [id:company_performance_and_valuation]"""
+    """# 公司业绩预测和估值如何？ [id:company_performance_and_valuation]"""
     future_performance: FuturePerformanceView = Field(
         default_factory=FuturePerformanceView,
         json_schema_extra={"markdown_title": "公司未来业绩如何？"}

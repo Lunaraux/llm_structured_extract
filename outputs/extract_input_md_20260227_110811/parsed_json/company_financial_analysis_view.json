@@ -1,0 +1,120 @@
+{
+  "balance_sheet_analysis": {
+    "quick_analysis": "null",
+    "asset_quality": {
+      "asset_structure": {
+        "exit_barrier": "null",
+        "operational_risk": "null"
+      },
+      "cash_content": {
+        "financial_flexibility": "null",
+        "potential_loss": "null"
+      }
+    },
+    "detailed_analysis": "null",
+    "asset_common_size_analysis": {
+      "anomalies": "null",
+      "debt_to_asset_ratio": "null",
+      "net_assets": "● 9,997,994,841.33（来源：Page 4 表格“归属于上市公司股东的净资产”2024年末列）",
+      "annual_interest_cost": "● 2024年财务费用1.59 亿元（来源：Page 4 “（四）主要业绩驱动因素”第3点）",
+      "accounts_receivable": "null",
+      "prepaid_accounts": "null",
+      "accounts_payable": "null",
+      "cash_on_hand": "null",
+      "inventory": "null",
+      "goodwill": "null",
+      "fixed_assets": "null"
+    },
+    "asset_trend_analysis": {
+      "historical_comparison": "● 2024年末总资产17,494,129,821.88元，较2023年末增长8.61%；2023年末为17,494,129,821.88元，2022年末为23,459,107,708.73元（调整前）/23,473,398,887.35元（调整后）（来源：Page 4 表格“近三年主要会计数据和财务指标”）"
+    },
+    "asset_comparative_analysis": {
+      "industry_benchmark": "null"
+    },
+    "asset_ratio_analysis": {
+      "solvency": {
+        "short_term_solvency": "null",
+        "long_term_solvency": "null"
+      },
+      "operational_capability": {
+        "ar_turnover": "null",
+        "inventory_turnover": "null",
+        "fa_turnover": "null",
+        "ta_turnover": "null"
+      },
+      "equity_multiplier": "null"
+    }
+  },
+  "income_statement_analysis": {
+    "quick_analysis_income": "null",
+    "profit_quality": {
+      "revenue_quality": {
+        "revenue_growth": "● 2024年公司实现营业总收入88.70 亿元，同比上升 26.86%（来源：Page 4 “（四）主要业绩驱动因素”第1点）",
+        "revenue_volatility": "null"
+      },
+      "net_profit_quality": {
+        "profit_growth": "● 归属于上市公司股东的净利润2.16 亿元（来源：Page 4 “（四）主要业绩驱动因素”开头）；扣除非经常性损益后的归属于上市公司股东的净利润亏损3.33亿元，较上年同期亏损 48.83亿元大幅减亏93.19%（来源：Page 4 “（四）主要业绩驱动因素”开头）",
+        "profit_volatility": "● 分季度净利润：第一季度-48,804,484.37元、第二季度-78,687,713.36元、第三季度428,163,017.75元、第四季度-84,268,736.66元（来源：Page 6 表格“分季度主要会计数据”）"
+      },
+      "gross_margin_quality": {
+        "rd_investment_space": "null",
+        "marketing_investment_space": "null"
+      }
+    },
+    "detailed_analysis_income": "null",
+    "income_common_size_analysis": {
+      "income_anomalies": "null",
+      "sales_expenses": "null",
+      "management_costs": "null",
+      "rd_expenses": "null",
+      "financial_expenses": "● 2024年财务费用1.59 亿元（来源：Page 4 “（四）主要业绩驱动因素”第3点）",
+      "annual_revenue": {
+        "revenue_growth_3y": "● 2024年营业收入8,869,716,323.34元，2023年6,991,677,730.61元（调整后），2022年14,415,038,850.39元（调整后）（来源：Page 4 表格“近三年主要会计数据和财务指标”）",
+        "product_revenue_mix": "null",
+        "revenue_forecast": "null"
+      },
+      "gross_margin": "● 2024年生猪养殖业务毛利率 22.83%（来源：Page 4 “（四）主要业绩驱动因素”第2点）",
+      "top_cost_item": "null",
+      "net_profit": {
+        "profit_growth_3y": "● 2024年归属于上市公司股东的净利润216,402,083.36元，2023年8,528,709,536.15元（调整后），2022年-13,387,147,012.44元（调整后）（来源：Page 4 表格“近三年主要会计数据和财务指标”）",
+        "profit_forecast": "null"
+      },
+      "government_subsidies": "null",
+      "tax_rate": "null"
+    },
+    "income_trend_analysis": {
+      "income_historical_comparison": "● 2024年营业收入8,869,716,323.34元，同比增长26.86%；2023年6,991,677,730.61元（调整后）；2022年14,415,038,850.39元（调整后）（来源：Page 4 表格“近三年主要会计数据和财务指标”）  \n● 2024年归属于上市公司股东的净利润216,402,083.36元，2023年8,528,709,536.15元（调整后），2022年-13,387,147,012.44元（调整后）（来源：Page 4 表格“近三年主要会计数据和财务指标”）"
+    },
+    "income_comparative_analysis": {
+      "income_industry_benchmark": "null"
+    },
+    "income_ratio_analysis": {
+      "profitability": "null",
+      "main_gross_margin": "● 2024年生猪养殖业务毛利率 22.83%（来源：Page 4 “（四）主要业绩驱动因素”第2点）",
+      "net_margin": "null",
+      "roa": "null",
+      "roe": "● 加权平均净资产收益率2.00%（来源：Page 5 表格“主要会计数据和财务指标”）",
+      "profit_to_cash_ratio": "null"
+    },
+    "growth_capability": {
+      "revenue_growth_rate": "● 2024年营业收入同比上升26.86%（来源：Page 4 “（四）主要业绩驱动因素”第1点）",
+      "asset_growth_rate": "● 2024年末总资产较上年末增长8.61%（来源：Page 4 表格“近三年主要会计数据和财务指标”）"
+    }
+  },
+  "cash_flow_statement_analysis": {
+    "quick_analysis_cash": "null",
+    "cash_flow_status": {
+      "operating_cash_flow_status": {
+        "cash_generation_capability": "null",
+        "ar_collection_quality": "null"
+      },
+      "free_cash_flow_status": {
+        "debt_dividend_servicing": "null"
+      }
+    },
+    "detailed_analysis_cash": "null",
+    "operating_cash_flow_net": "● 174,436,414.86（来源：Page 5 表格“主要会计数据和财务指标”）",
+    "investing_cash_flow_net": "null",
+    "financing_cash_flow_net": "null"
+  }
+}

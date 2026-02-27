@@ -10,7 +10,7 @@ llm:
   models:
     dashscope:
       # 模型名称
-      name: "qwen3-max-preview"
+      name: "qwen3.5-plus"
       # 生成参数
       temperature: 0.1
       max_tokens: 4096
