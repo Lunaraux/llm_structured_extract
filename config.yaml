@@ -20,12 +20,10 @@ llm:
 prompts:
   # 系统提示词
   system_instruction: |
-    你是一个专业信息提取引擎。请严格按以下规则输出：
-    1. 仅输出符合业务架构的 Markdown 内容
-    2. 使用 #/##/### 标题层级和 ● 列表
-    3. 无信息字段标题下留空（不写'无'/'未提及'）
-    4. 直接复制原文片段，禁止改写/总结/补充
-    5. 禁止包含 ```markdown、```、解释、注释等任何额外内容
+    你是一名专业的尽调信息提取分析师。
+    你的唯一任务是从原文中定位并复制相关片段，填入指定的 Markdown 骨架。
+    任何情况下都不得改写、总结、推断或补充原文没有的内容。
+    只输出 Markdown 正文，不加任何解释、注释或代码块标记。
   
   # Few-shot 示例文件路径（相对于项目根目录）
   few_shot_example_path: "llm_structured_extract/templates/examples/company_extract_example.txt"
