@@ -2,4 +2,4 @@ FROM python:3.11-slim
 WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir .
-CMD ["python", "-m", "llm_structured_extract_service.main", "--text", "张三，邮箱 zhang@example.com，电话 13800001234"]
+CMD ["python", "-c", "from llm_structured_extract import __version__; print(__version__)"]

@@ -19,35 +19,36 @@ def _get_template_path() -> Path:
         return Path(custom)
     return Path(__file__).parent.parent / "templates" / "prompt.j2"
 
+@lru_cache(maxsize=1)
 def _load_template_content() -> str:
     return _get_template_path().read_text(encoding="utf-8")
 
 def _unwrap_annotation(annotation: Any) -> Tuple[Any, bool]:
-    """
-    剥开包装，找到实际类型：
-    Optional[X]  → X
-    List[X]      → X
-    Union[X,None]→ X
-    X            → X（直接返回）
-    返回 (实际类型, 是否是列表)
+    """Unwrap Optional[X], List[X], Annotated[X, ...] to find the inner type.
+
+    Returns (inner_type, is_list).
     """
     origin = get_origin(annotation)
     args = get_args(annotation)
-    is_list = False
+
+    # Handle Annotated types first (Pydantic v2 pattern):
+    #   Annotated[Optional[SomeModel], ...] → unwrap to Optional[SomeModel] → recurse
+    if origin is not None and getattr(origin, "__name__", None) == "Annotated":
+        return _unwrap_annotation(args[0])
 
     if origin is typing.Union:
-        # Optional[X] 就是 Union[X, None]
-        # 过滤掉 None，取剩下的那个
         non_none = [a for a in args if not (isinstance(a, type) and issubclass(a, type(None)))]
         if len(non_none) == 1:
             return _unwrap_annotation(non_none[0])
-    
+        # Multi-type union — cannot resolve deterministically
+        return annotation, False
+
     if origin in (list, List):
-        is_list = True
         if args:
-            return _unwrap_annotation(args[0])
-    
-    return annotation, is_list
+            inner, _ = _unwrap_annotation(args[0])
+            return inner, True
+
+    return annotation, False
 
 def _extract_specs(model: Type[BaseModel], prefix: str = "", level: int = 0) -> List[str]:
     lines = []
@@ -80,10 +81,10 @@ def _extract_specs(model: Type[BaseModel], prefix: str = "", level: int = 0) -> 
     return lines
 
 def build_prompt(
-    text: str, 
+    text: str,
     model_cls: Type[BaseModel],
     module_name: str = "",
-    few_shot_example: str = ""
+    few_shot_example: str | None = None
 ) -> str:
     business_arch = getattr(model_cls, "__business_architecture__", "")
     if not business_arch.strip():
@@ -94,18 +95,7 @@ def build_prompt(
     
     specs_list = _extract_specs(model_cls)
     field_specs = "\n".join(specs_list)
-    
-    # 计算总字段数（包括嵌套的）
-    def count_fields(m):
-        count = 0
-        for f in m.model_fields.values():
-            count += 1
-            ut, _ = _unwrap_annotation(f.annotation)
-            if hasattr(ut, "model_fields"):
-                count += count_fields(ut)
-        return count
-    
-    total_fields = count_fields(model_cls)
+    total_fields = len(specs_list)
     
     try:
         tpl_content = _load_template_content()
@@ -115,17 +105,17 @@ def build_prompt(
             field_specs=field_specs,
             text=text,
             module_name=module_name,
-            example=few_shot_example or settings.get_few_shot_example(),
+            example=few_shot_example if few_shot_example is not None else settings.get_few_shot_example(),
             field_count=total_fields
         )
     except Exception as e:
         raise PromptError(f"Failed to build prompt: {str(e)}") from e
 
 async def async_build_prompt(
-    text: str, 
+    text: str,
     model_cls: Type[BaseModel],
     module_name: str = "",
-    few_shot_example: str = ""
+    few_shot_example: str | None = None
 ) -> str:
     """异步构建提示词，避免阻塞事件循环"""
     return await asyncio.to_thread(build_prompt, text, model_cls, module_name, few_shot_example)

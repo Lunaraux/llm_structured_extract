@@ -28,13 +28,3 @@ prompts:
   # Few-shot 示例文件路径（相对于项目根目录）
   few_shot_example_path: "llm_structured_extract/templates/examples/company_extract_example.txt"
 
-# 服务配置
-service:
-  # 默认使用的 schema
-  default_schema: ""
-  
-  # Celery 任务队列名称
-  task_queue: "extract"
-  
-  # 默认超时时间（秒）
-  default_timeout: 30

@@ -8,6 +8,7 @@ import re
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from llm_structured_extract.utils.generator import ModelGenerator
+from llm_structured_extract.utils.strings import SEQ_PATTERN
 
 def preprocess_md_for_model(md_content):
     """
@@ -17,9 +18,7 @@ def preprocess_md_for_model(md_content):
     """
     lines = md_content.split("\n")
     processed_lines = []
-    # 匹配标题前的序号：支持「1.」「（1）」「二、」「3、」等格式
-    seq_pattern = r"^[一二三四五六七八九十\d]{1,2}[.、）\s)]*"
-    
+
     for line in lines:
         stripped_line = line.strip()
         # 处理标题行（#/##/###/#### 开头）
@@ -28,7 +27,7 @@ def preprocess_md_for_model(md_content):
             level = len(re.match(r'^#+', stripped_line).group())
             title_content = stripped_line.lstrip("# ").strip()
             # 剥离序号
-            title_content = re.sub(seq_pattern, "", title_content).strip()
+            title_content = re.sub(SEQ_PATTERN, "", title_content).strip()
             # 简化层级：H4→H3（避免过深嵌套）
             if level == 4:
                 level = 3

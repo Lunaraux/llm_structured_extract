@@ -2,6 +2,11 @@
 import re
 import unicodedata
 
+# Shared regex for stripping leading sequence numbers from titles.
+# Matches: "1.", "1、", "(1)", "（1）", "一、", "二.", "3)", etc.
+SEQ_PATTERN = r"^[（(]?[一二三四五六七八九十\d]{1,2}[.、）\s)]*"
+
+
 def normalize_title(text: str) -> str:
     """
     正规化标题，用于增强匹配的鲁棒性。
@@ -18,8 +23,7 @@ def normalize_title(text: str) -> str:
     text = unicodedata.normalize('NFKC', text)
     
     # 移除开头的序号
-    seq_pattern = r"^[一二三四五六七八九十\d]{1,2}[.、）\s)]*"
-    text = re.sub(seq_pattern, "", text.strip())
+    text = re.sub(SEQ_PATTERN, "", text.strip())
     
     # 移除末尾标点
     text = re.sub(r'[:：?？.。!！\s]+$', '', text)

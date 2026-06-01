@@ -19,19 +19,12 @@ dependencies = [
   "tenacity>=8.2.3",
 ]
 
-[project.scripts]
-llm-extract = "llm_structured_extract.cli:cli"
-
 [project.optional-dependencies]
 test = ["pytest>=8.2.0"]
-service = [
-  "celery>=5.3.6",
-  "redis>=5.0.1",
-]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["llm_structured_extract*", "llm_structured_extract_service*"]
+include = ["llm_structured_extract*"]

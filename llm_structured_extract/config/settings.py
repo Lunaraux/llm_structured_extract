@@ -30,18 +30,10 @@ class PromptConfig(BaseModel):
     few_shot_example_path: Optional[str] = None
 
 
-class ServiceConfig(BaseModel):
-    """服务配置"""
-    default_schema: str = ""
-    task_queue: str = "extract"
-    default_timeout: int = 30
-
-
 class YAMLConfig(BaseModel):
     """YAML配置文件结构"""
     llm: LLMConfig = Field(default_factory=LLMConfig)
     prompts: PromptConfig = Field(default_factory=PromptConfig)
-    service: ServiceConfig = Field(default_factory=ServiceConfig)
 
 
 class Settings(BaseSettings):
@@ -49,7 +41,6 @@ class Settings(BaseSettings):
     # 环境变量配置（优先级最高）
     DASHSCOPE_API_KEY: str = ""
     LLM_PROVIDER: str = ""
-    REDIS_URL: str = ""
     OLLAMA_HOST: str = ""
     PROJECT_ROOT: Path = Path(__file__).resolve().parents[2]
     PROMPT_TEMPLATE_PATH: Optional[str] = None
@@ -109,8 +100,6 @@ class Settings(BaseSettings):
         """设置默认值（环境变量优先，YAML配置次之）"""
         if not self.LLM_PROVIDER:
             self.LLM_PROVIDER = self._yaml_config.llm.provider
-        if not self.REDIS_URL:
-            self.REDIS_URL = "redis://localhost:6379/0"
         if not self.OLLAMA_HOST:
             self.OLLAMA_HOST = "http://127.0.0.1:11434"
 
@@ -147,13 +136,8 @@ class Settings(BaseSettings):
             except Exception as e:
                 print(f"Warning: Failed to load default example from {default_path}: {str(e)}")
         
-        # 3. 如果都失败，返回空字符串或最简示例
-        return "No example provided."
-
-    @property
-    def service_config(self) -> ServiceConfig:
-        """获取服务配置"""
-        return self.yaml_config.service
+        # 3. 如果都失败，返回空字符串，由模板决定是否显示 no-example 分支
+        return ""
 
 
 # 全局配置实例

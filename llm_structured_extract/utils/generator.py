@@ -3,6 +3,8 @@ import re
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, field
 
+from llm_structured_extract.utils.strings import SEQ_PATTERN
+
 @dataclass
 class MarkdownNode:
     level: int
@@ -24,8 +26,7 @@ class ModelGenerator:
         return ''.join(x.title() for x in components)
 
     def _normalize_name(self, title: str) -> str:
-        # 移除 Markdown 符号和前面的序号
-        clean = re.sub(r'^[#\s\d\.]+', '', title).strip()
+        clean = re.sub(SEQ_PATTERN, '', title).strip()
         # 移除非字母数字字符并转换为下划线
         clean = re.sub(r'[^\w\s]', '', clean)
         clean = re.sub(r'\s+', '_', clean).lower()
